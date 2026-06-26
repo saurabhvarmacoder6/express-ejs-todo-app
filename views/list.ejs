@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+
+    <title>List Page</title>
+</head>
+
+<body>
+    <%- include('navbar') %>
+        <div class="div">
+            <div class="div2">
+                <h1>List Page</h1>
+                <div class="list-div">
+                    <ul class="lists">
+                        <% tasks.forEach(task=> { %>
+                            <div class="list-text-div">
+                                <li class="list">
+                                    <%= task.task %>
+                                </li>
+                                <button class="edit"><a class="up-link" href="/update/<%=task._id%>">Edit</a></button>
+                                <button class="delete"><a class="up-link"
+                                        href="/delete/<%=task._id%>">Delete</a></button>
+                            </div>
+                            <% }) %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

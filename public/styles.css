@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background: linear-gradient(rgb(120, 254, 252),#41dbc1);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    color: #1a1a1a;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 10rem;
+    font-size: 1rem;
+}
+
+.link a {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bolder;
+}
+
+.link:hover a {
+    color: rgb(75, 75, 75);
+}
+
+.div {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+
+}
+
+.div2{
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem #41dbc1;
+    margin-top: 4rem;
+    width: 60%;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10rem;
+}
+
+.input{
+    border-radius: 0.6rem;
+    width: 20rem;
+    height: 2rem;
+    padding: 0.2rem;
+}
+
+.sb-btn{
+    height: 2rem;
+    width: 14rem;
+    border-radius: 2rem;
+    background: linear-gradient(#41dbc1,#48ffe1);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.list-text-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list{
+    width: 26rem;
+}
+
+.edit,.delete, .up-link{
+    height: 2rem;
+    width: 7rem;
+    border-radius: 2rem;
+    background: linear-gradient(#41dbc1,#48ffe1);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
